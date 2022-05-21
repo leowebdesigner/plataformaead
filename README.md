@@ -1,6 +1,6 @@
 
-### Passo a passo
-Clone Repositório
+### Step by step
+Repository clone
 ```sh
 git clone https://github.com/leowebdesigner/plataformaead.git plataformaead
 ```
@@ -9,12 +9,12 @@ git clone https://github.com/leowebdesigner/plataformaead.git plataformaead
 cd plataformaead
 ```
 
-Remova o versionamento
+remove versioning
 ```sh
 rm -rf .git/
 ```
 
-Atualize as variáveis de ambiente do arquivo .env
+Update file environment variables .env
 ```dosini
 APP_NAME=plataformaead
 APP_URL=http://localhost:8989
@@ -36,29 +36,29 @@ REDIS_PORT=6379
 ```
 
 
-Suba os containers do projeto
+Upload project containers
 ```sh
 docker-compose up -d
 ```
 
 
-Acessar o container
+access the container
 ```sh
 docker-compose exec app bash
 ```
 
 
-Instalar as dependências do projeto
+Install project dependencies
 ```sh
 composer install
 ```
 
 
-Gerar a key do projeto Laravel
+Generate Laravel project key
 ```sh
 php artisan key:generate
 ```
 
 
-Acesse o projeto
+Access the project
 [http://localhost:8989](http://localhost:8989)
