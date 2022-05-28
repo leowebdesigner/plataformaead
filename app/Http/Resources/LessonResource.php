@@ -18,7 +18,8 @@ class LessonResource extends JsonResource
               'id'=>$this->id,
               'name'=>ucwords(strtolower($this->name)),
               'description'=> $this->description,
-              'video' => $this->video
+              'video' => $this->video,
+              'views'=> ViewResource::collection($this->whenLoaded('views')),
         ];
     }
 }
