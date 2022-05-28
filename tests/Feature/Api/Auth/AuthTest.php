@@ -44,7 +44,7 @@ class AuthTest extends TestCase
 
     public function test_logout()
     {
-       $token = $this -> createTokenUser();
+        $token = $this -> createTokenUser();
 
         $response = $this->postJson('/logout',[],[
             'Authorization' => "Bearer {$token}",
